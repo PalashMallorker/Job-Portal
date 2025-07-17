@@ -3,6 +3,7 @@ package com.jobportal.entity;
 import com.jobportal.enums.Role;
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.security.core.userdetails.UserDetails;
 
 @Entity
 @Table(name="users")
@@ -11,7 +12,8 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class User {
+public class User{
+
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
