@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: jobportal-backend
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jobportal_db
+    username: postgres
+    password: Thombi@05
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+  server:
+    port: 8080
